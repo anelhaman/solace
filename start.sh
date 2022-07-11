@@ -1,0 +1,1 @@
+docker run -d -p 8080:8080 -p 55555:55555 --ulimit core=-1 --ulimit nofile=2448:6592 --shm-size=1g --env system_scaling_maxconnectioncount=100 --env system_scaling_maxqueuemessagecount=100  --env messagespool_maxspoolusage=1000 --env username_admin_globalaccesslevel=admin --env username_admin_password=admin --name=solace solace/solace-pubsub-standard
