@@ -1,5 +1,7 @@
 #!/bin/bash -x
-docker run -d -p 8080:8080 \
+docker run -d \
+--user root \
+-p 8080:8080 \
 -p 55555:55555 \
 -p 8008:8008 \
 -p 1883:1883 \
